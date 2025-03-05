@@ -25,7 +25,7 @@ Instead of relying on costly tools, you can use **Windows' built-in recording to
 
 ### 🎯 Choose Your Own Model
 
-You can pick different **Whisper audio transcription models** depending on how accurate you want the transcription to be and how much time you have. **Higher accuracy = longer processing time.** [Check out the Whisperify documentation](#) to see the pros and cons of each model.
+You can pick different **Whisper audio transcription models** depending on how accurate you want the transcription to be and how much time you have. **Higher accuracy = longer processing time.** [Check out the Whisperify documentation](https://github.com/openai/whisper) to see the pros and cons of each model.
 
 ---
 
