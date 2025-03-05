@@ -89,16 +89,6 @@ After activating the virtual environment, install the required dependencies:
 pip install -r requirements.txt
 ```
 
-If you don’t have the `requirements.txt` file yet, create one and add the following:
-
-```sh
-torch
-whisper
-argparse
-av
-ffmpeg-python
-```
-
 ### 6️⃣ Verify the Installation
 
 To confirm everything is installed correctly, run:
