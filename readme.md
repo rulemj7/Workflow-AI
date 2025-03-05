@@ -1,4 +1,4 @@
-# Whisper Transcription Tool
+# Whisper Transcription Tool - AI WorkFlow 1.0
 
 ## 📖 Table of Contents
 
