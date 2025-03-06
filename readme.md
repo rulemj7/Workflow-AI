@@ -8,6 +8,7 @@
 - [How It Works](#how-the-tool-works-behind-the-scenes)
 - [How to Use](#how-to-use-the-tool)
 - [Example Transcription Flows](#example-transcription-flows)
+- [Demo Video](#demo-video)
 - [Features](#features)
 - [Troubleshooting & FAQs](#troubleshooting--faqs)
 - [Extra Tips](#extra-tips)
@@ -193,6 +194,14 @@ Timestamps saved to: D:\Videos\Recording_2025-02-18_timestamps.txt
 ```
 
 Now you can open the generated `.txt` file and use it as needed! 🚀
+
+---
+
+## 🎥 Demo Video
+
+Watch how easy it is to use Whisper Transcription Tool:
+
+[![Watch the Demo](https://img.youtube.com/vi/4IWGEqcjP6w/0.jpg)](https://www.youtube.com/watch?v=4IWGEqcjP6w)
 
 ---
 
