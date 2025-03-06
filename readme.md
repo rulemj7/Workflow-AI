@@ -7,6 +7,7 @@
 - [Getting the Code from GitHub](#getting-the-code-from-github)
 - [How It Works](#how-the-tool-works-behind-the-scenes)
 - [How to Use](#how-to-use-the-tool)
+- [Example Transcription Flows](#example-transcription-flows)
 - [Features](#features)
 - [Troubleshooting & FAQs](#troubleshooting--faqs)
 - [Extra Tips](#extra-tips)
@@ -21,7 +22,7 @@ Transcription services can be **expensive** and often come with **limitations, s
 
 ### 🎤 A Smarter, Cost-Free Alternative
 
-Instead of relying on costly tools, you can use **Windows' built-in recording tools** (like the **Snipping Tool or Xbox Game Bar**) to record your meetings or videos **without any intrusive bots**. Once you have your recording, just **run it through this tool**, and it will transcribe everything for you—**for free!**
+Instead of relying on costly tools, you can use **Windows' built-in recording tools** like Snipping Tool to record your meetings or videos **without any intrusive bots**. Once you have your recording, just **run it through this tool locally**, and it will transcribe everything for you—**for free!**
 
 ### 🎯 Choose Your Own Model
 
@@ -145,47 +146,53 @@ You're now ready to use the tool! 🚀
 ## 🎯 How to Use the Tool
 
 ```sh
-python script.py --media /path/to/file.mp3
-```
-
-👉 **Choose a Model:**
-```sh
-python script.py --model medium --media /path/to/file.mp3
-```
-
-👉 **Specify Output File:**
-```sh
-python script.py --media /path/to/file.mp3 --output my_transcription.txt
+python main.py
 ```
 
 ---
 
-## 🔥 Features
+## 📝 Example Transcription Flows
 
-✅ **Works for audio & video**✅ **Uses CPU & GPU (GPU is faster!)**✅ **Saves transcripts with timestamps**✅ **Provides real-time updates**✅ **No subscriptions or hidden costs!**
+### **1️⃣ Simplified Transcription Flow** (User-Friendly)
+1. **Run the Script:**
+   ```sh
+   python main.py
+   ```
+2. **Select Whisper Model:** The script will ask for a model (`tiny`, `small`, `base`, `medium`, `large`).
+3. **Enter File Path:** Provide the path to the audio/video file.
+4. **Real-Time Progress:** The script displays a progress bar while transcribing.
+5. **Transcript Saved:**
+   - Full transcript: `output.txt`
+   - Timestamps & session-wise transcript: `timestamps.txt`
 
----
-
-## ❓ Troubleshooting & FAQs
-
-### ❌ Problem: File Not Found
-
-**Solution:** Ensure you provide the correct path.
-
-### ❌ Problem: Missing Dependencies
-
-**Solution:** Install FFmpeg:
+### **2️⃣ Customizable Transcription Flow (Command-Line Arguments)**
+This mode gives you more control over settings like model selection and output file location.
 
 ```sh
-pip install av ffmpeg-python
+python main.py --model medium --media /path/to/file.mp3 --output /custom/path/output.txt
+```
+- `--model` → Choose Whisper model (`tiny`, `small`, `base`, `medium`, `large`)
+- `--media` → Path to the audio or video file
+- `--output` → (Optional) Custom output file location
+
+**Example Console Output:**
+```
+Using device: CPU
+Enter Whisper model (tiny, small, base, medium, large): tiny
+Using model: tiny
+Loading 'tiny' model on CPU...
+Model loaded successfully.
+Enter the full path of your audio or video file: "D:\Videos\Recording.mp4"
+Video file detected. Whisper will attempt to extract and transcribe the audio.
+
+Starting transcription...
+100% [==========]  
+Transcription completed in 2m 26s!
+Transcription saved to: D:\Videos\Recording_2025-02-18.txt
+Timestamps saved to: D:\Videos\Recording_2025-02-18_timestamps.txt
 ```
 
-### ❌ Problem: Transcription is Slow
-
-**Solution:**
-
-- Use a **GPU** if available.
-- Try a **smaller model** like `tiny` or `small`.
+Now you can open the generated `.txt` file and use it as needed! 🚀
 
 ---
 
