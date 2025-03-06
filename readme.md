@@ -159,7 +159,7 @@ python main.py
    python main.py
    ```
 2. **Select Whisper Model:** The script will ask for a model (`tiny`, `small`, `base`, `medium`, `large`).
-3. **Enter File Path:** Provide the path to the audio/video file.
+3. **Enter File Path:** Right-click the Video or Audio file in your computer → Click Copy as Path → Paste in the tool → Press Enter.
 4. **Real-Time Progress:** The script displays a progress bar while transcribing.
 5. **Transcript Saved:**
    - Full transcript: `output.txt`
