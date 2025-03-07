@@ -52,7 +52,21 @@ To verify Git is installed, run:
 git --version
 ```
 
-### 2️⃣ Install Python
+### 2 Install ffmpeg
+
+1. Download **ffmpeg** from [videohelp.com](https://www.videohelp.com/software/ffmpeg)
+2. Extract The Downloaded Folder and navigate till bin folder
+   ```sh
+   example : C:\Users\sande\Downloads\ffmpeg-7.1-full_build\ffmpeg-7.1-full_build\bin
+   ```
+3. Add the copied path into the environment variable [video guide](https://youtu.be/GYdhqmy_Nt8?si=K6FfdxV5PsrWCKNA)
+4. Once installed ,verify the installation by running:
+   ```sh
+   ffmpeg -version
+   ```
+
+
+### 3 Install Python
 
 1. Download **Python** from [python.org](https://www.python.org/)
 2. **Important:** During installation, check the box that says **“Add Python to PATH”**
@@ -62,7 +76,7 @@ git --version
    ```
    You should see output like `Python 3.x.x`.
 
-### 3️⃣ Install an IDE (Optional, Recommended for Beginners)
+### 4 Install an IDE (Optional, Recommended for Beginners)
 
 If you're not familiar with running Python scripts, an **IDE (Integrated Development Environment)** makes things easier:
 
@@ -71,7 +85,7 @@ If you're not familiar with running Python scripts, an **IDE (Integrated Develop
 
 👉 **If using VS Code:** Install the Python extension from the Extensions tab.
 
-### 4️⃣ Set Up a Virtual Environment (Recommended)
+### 5 Set Up a Virtual Environment (Recommended)
 
 To keep dependencies isolated and avoid conflicts, **create a virtual environment:**
 
@@ -83,7 +97,7 @@ Activate the virtual environment:
 - **Windows:** `whisper_env\Scripts\activate`
 - **Mac/Linux:** `source whisper_env/bin/activate`
 
-### 5️⃣ Install Dependencies
+### 6 Install Dependencies
 
 After activating the virtual environment, install the required dependencies:
 
@@ -91,7 +105,7 @@ After activating the virtual environment, install the required dependencies:
 pip install -r requirements.txt
 ```
 
-### 6️⃣ Verify the Installation
+### 7 Verify the Installation
 
 To confirm everything is installed correctly, run:
 
@@ -108,13 +122,13 @@ If you see the success message, you're all set! 🚀
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone <your-repository-url>
+git clone https://github.com/rulemj7/Workflow-AI.git
 ```
 
 ### 2️⃣ Navigate to the Project Directory
 
 ```sh
-cd <your-repository-name>
+cd Workflow-AI
 ```
 
 ### 3️⃣ Activate Virtual Environment
